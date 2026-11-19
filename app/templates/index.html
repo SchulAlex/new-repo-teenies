@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Teenage Years</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    {% include 'base.html' %}
+    <div class="container">
+        <h1>Welcome to The Teenage Years</h1>
+        <p>Explore the challenges and experiences of teenagers in 2026. This platform is dedicated to understanding the voices of youth and their unique journeys.</p>
+        
+        <section>
+            <h2>Challenges Faced by Teenagers</h2>
+            <ul>
+                <li>Social Media Pressure</li>
+                <li>Academic Stress</li>
+                <li>Identity Exploration</li>
+                <li>Peer Relationships</li>
+                <li>Mental Health Awareness</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Join the Conversation</h2>
+            <p>Participate in our polls and quizzes to share your thoughts and experiences.</p>
+            <a href="/polls" class="btn">Take a Poll</a>
+            <a href="/quiz" class="btn">Take a Quiz</a>
+        </section>
+    </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
